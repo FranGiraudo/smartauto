@@ -1,0 +1,32 @@
+{
+  "name": "smartauto-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for SmartAuto - Plataforma Inteligente de Compra y Venta de Autos Usados con IA",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run start:dev --workspace=smartauto-backend",
+    "dev:frontend": "npm run start --workspace=smartauto-frontend",
+    "build:backend": "npm run build --workspace=smartauto-backend",
+    "build:frontend": "npm run build --workspace=smartauto-frontend",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start:backend": "npm run start:prod --workspace=smartauto-backend",
+    "start:frontend": "npm run start --workspace=smartauto-frontend",
+    "lint:backend": "npm run lint --workspace=smartauto-backend",
+    "test:backend": "npm run test --workspace=smartauto-backend"
+  },
+  "keywords": [
+    "smartauto",
+    "monorepo",
+    "nestjs",
+    "vanilla-javascript",
+    "prisma",
+    "gemini-ai",
+    "groq"
+  ],
+  "author": "FranGiraudo",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,53 @@
+# ==========================================
+# SmartAuto Monorepo - .gitignore
+# ==========================================
+
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Build & compiled outputs
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+*.tsbuildinfo
+
+# Uploads & user generated content
+uploads/
+**/uploads/
+
+# Temporary, debug & stray files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+5173
+**/5173
+test-db.js
+test-cars.js
+
+# Operating System & IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
